@@ -76,7 +76,7 @@ export class ScanService {
     let scanCategory = iterator.next();
     scanCategory.loading = true;
 
-    await new Promise(r => setTimeout(r, 5 * 1000));
+    await new Promise(r => setTimeout(r, 1 * 1000));
 
     scanCategory.result = Math.floor(Math.random() * 10) + 1;
 
